@@ -41,7 +41,7 @@ app.post('/setdata',function(req,res){
 app.get('/recent',function(req,res){
 sess=req.session;	
 	res.contentType('application/json');
-    res.send(JSON.stringify(unique(sess.arr1)));
+    res.send(JSON.stringify(sess.arr1));
 });
 
 app.listen(80,function(){
